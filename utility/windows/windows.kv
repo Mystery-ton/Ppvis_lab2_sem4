@@ -1,0 +1,157 @@
+# basic inputs
+<TextInputField@MDTextField>:
+    size_hint: 0.5, 0.1
+    input_type: "text"
+
+
+<NumberInputField@TextInputField>:
+    input_type: "number"
+
+
+# windows
+<DialogContent>:
+
+    orientation: 'vertical'
+    spacing: "5dp"
+    size_hint_y: None
+    height: "660dp"
+
+
+<SaveDialogContent>:
+    height: "50dp"
+    path: save_path
+
+    TextInputField:
+        id: save_path
+        hint_text: "Enter path to file:"
+
+
+<UploadDialogContent>:
+    height: "50dp"
+    path: upload_path
+
+    TextInputField:
+        id: upload_path
+        hint_text: "Enter path to file:"
+    
+
+<InputDialogContent>:
+    height: "400dp"
+
+    name: input_name
+    father_name: input_father_name
+    father_wage: input_father_wage
+    mother_name: input_mother_name
+    mother_wage: input_mother_wage
+    brothers_number: input_brothers_number
+    sisters_number: input_sisters_number
+
+    TextInputField:
+        id: input_name
+        hint_text: 'Enter full student name:'
+
+    TextInputField:
+        id: input_father_name
+        hint_text: 'Enter student`s father name:'
+
+    NumberInputField:
+        id: input_father_wage
+        hint_text: 'Enter student`s father wage:'
+
+    TextInputField:
+        id: input_mother_name
+        hint_text: 'Enter student`s mother name:'
+
+    NumberInputField:
+        id: input_mother_wage
+        hint_text: 'Enter student`s mother wage:'
+
+    NumberInputField:
+        id: input_brothers_number
+        hint_text: 'Enter student`s number of brothers:'
+
+    NumberInputField:
+        id: input_sisters_number
+        hint_text: 'Enter student`s number of sisters:'
+
+
+
+<FilterDialogContent>:
+    height: "380dp"
+
+    first_name: filter_first_name
+    last_name: filter_last_name
+    parent_first_name: filter_parent_first_name
+    parent_last_name: filter_parent_last_name
+    siblings_count: filter_siblings_number
+    wage_lower: filter_wage_lower
+    wage_upper: filter_wage_upper
+
+    TextInputField:
+        id: filter_first_name
+        hint_text: 'Enter student`s first name:'
+
+    TextInputField:
+        id: filter_last_name
+        hint_text: 'Enter student`s last name:'
+
+    TextInputField:
+        id: filter_parent_first_name
+        hint_text: 'Enter student`s parent first name:'
+
+    TextInputField:
+        id: filter_parent_last_name
+        hint_text: 'Enter student`s parent last name:'
+
+    TextInputField:
+        id: filter_siblings_number
+        hint_text: 'Enter student`s number of siblings:'
+
+    TextInputField:
+        id: filter_wage_lower
+        hint_text: 'Enter student`s parents lower bound wage:'
+    
+    TextInputField:
+        id: filter_wage_upper
+        hint_text: 'Enter student`s parents upper bound wage:'
+
+
+
+<DeleteDialogContent>:
+    height: "380dp"
+
+    first_name: delete_first_name
+    last_name: delete_last_name
+    parent_first_name: delete_parent_first_name
+    parent_last_name: delete_parent_last_name
+    siblings_count: delete_siblings_number
+    wage_lower: delete_wage_lower
+    wage_upper: delete_wage_upper
+
+    TextInputField:
+        id: delete_first_name
+        hint_text: 'Enter student`s first name:'
+
+    TextInputField:
+        id: delete_last_name
+        hint_text: 'Enter student`s last name:'
+
+    TextInputField:
+        id: delete_parent_first_name
+        hint_text: 'Enter student`s parent first name:'
+
+    TextInputField:
+        id: delete_parent_last_name
+        hint_text: 'Enter student`s parent last name:'
+
+    TextInputField:
+        id: delete_siblings_number
+        hint_text: 'Enter student`s number of siblings:'
+
+    TextInputField:
+        id: delete_wage_lower
+        hint_text: 'Enter student`s parents lower bound wage:'
+
+    TextInputField:
+        id: delete_wage_upper
+        hint_text: 'Enter student`s parents upper bound wage:'
